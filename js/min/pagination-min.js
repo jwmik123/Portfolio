@@ -1,0 +1,1 @@
+pageSize=2,showPage=function(a){$(".card").hide(),$(".card").each(function(i){i>=pageSize*(a-1)&&i<pageSize*a&&$(this).show()})},showPage(1),$(".pagination li").click(function(){$(".pagination li").removeClass("active"),$(this).addClass("active"),showPage(parseInt($(this).text()))});

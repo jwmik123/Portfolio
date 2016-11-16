@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Joel Mik - portf.</title>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../css/materialize.css" media="screen,projection"/>
+        <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- highlight.js -->
+        <link rel="stylesheet" href="../highlight/styles/default.css">
+        <link rel="shortcut icon" href="images/tshirt-logo.png">
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="navi nav-wrapper white">
+                    <div class="container">
+                        <a href="../" class="brand-logo ">Jo&euml;l Mik</a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            </li>
+                            <li>
+                                <a href="../">terug naar portfolio</a>
+                            </li>
+                        </ul>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li>
+                                <a href="../">terug naar portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12 text-grey text-darken-3">
+                    <h2>Schoolcheck</h2>
+                    <hr>
+                </div>
+                <div class="col s6 text-grey text-darken-3">
+                    <h4>Inleiding</h4>
+                    <p>
+                        Schoolcheck is mijn allereerste opdracht voor een opdrachtgever. De website is bedoeld om kinderen uit groep 8 de beste keuze te maken voor hun vervolgopleiding naar de middelbare school(binnen de gemeente Amsterdam). Met deze opdracht heb ik geleerd
+                        hoe je samenwerkt met een opdrachtgever. En hoe je werkt met scrum.
+                    </p>
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                    <a class="github-link" target="_blank" href="https://github.com/jwmik123/iProject2016">
+                        Github</a>
+                </div>
+                <div class="col s6">
+                    <img class="hoverable materialboxed" src="../images/schoolcheck.png" alt="schoolcheck thumb" width="100%"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <h3>Code</h3>
+                </div>
+                <div class="col s8">
+                    <pre>
+          <code class="javascript">
+            $scope.customFilter = function(data){
+      var shouldShow = true;
+      var filters = ['district','specials','concept','basis'];
+
+      for(var i = 0; i < filters.length; i++){
+        if($scope.filterDict && $scope.filterDict[filters[i]]){
+          var filterValue = $scope.filterDict[filters[i]];
+          shouldShow = shouldShow && (filterValue == data[filters[i]] || filterValue == null);
+
+          if(!shouldShow){
+            return false;
+          }
+        }
+      }
+      return shouldShow;
+    };
+          </code>
+        </pre>
+                </div>
+                <div class="col s4">
+                    <blockquote id="blockquote-code-explaination">
+                        <p>
+                            Deze code heb ik gekozen omdat dit mij heel veel heeft geleerd over Javascript. Dit stukje code zorgt ervoor dat de dropdown-menu kan filteren wat je wilt zien op de pagina. Je kunt bijvoorbeeld je district kiezen “Noord”. Dan worden alle scholen uit
+                            Amsterdam Noord gefilterd. Met deze code ben ik heel blij.
+                        </blockquote>
+
+                    </div>
+                </div>
+            </div>
+            <div class="fixed-action-btn cd-top cd-is-visible cd-fade-out" style="bottom: 45px; right: 24px;">
+                <a class="btn-floating btn-large white z-depth-0">
+                    <i class="fa fa-arrow-up " aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <footer class="page-footer grey darken-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <h5 class="white-text">Contact</h5>
+                            <p class="grey-text text-lighten-4">joelmik123@gmail.com</p>
+                            <p class="grey-text text-lighten-4">+31 623 521 980</p>
+                        </div>
+                        <div class="col l4 offset-l2 s12">
+                            <h5 class="white-text">Links</h5>
+                            <ul>
+                                <li>
+                                    <a class="grey-text text-lighten-3" href="#!">
+                                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                        Facebook</a>
+                                </li>
+                                <li>
+                                    <a class="grey-text text-lighten-3" href="#!">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        Instagram</a>
+                                </li>
+                                <li>
+                                    <a class="grey-text text-lighten-3" href="#!">
+                                        <i class="fa fa-github" aria-hidden="true"></i>
+                                        Github</a>
+                                </li>
+                                <li>
+                                    <a class="grey-text text-lighten-3" href="#!">
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        &copy; 2016 Copyright Joel Mik, inc.
+                    </div>
+                </div>
+            </footer>
+            <script type="text/javascript" src="../js/jquery.min.js"></script>
+            <script type="text/javascript" src="../js/materialize.min.js"></script>
+            <script type="text/javascript" src="../js/main.js" charset="utf-8"></script>
+            <script src="../highlight/highlight.pack.js"></script>
+            <script>
+                hljs.initHighlightingOnLoad();
+            </script>
+            <script type="text/javascript" src="../js/pagination.js" charset="utf-8"></script>
+        </body>
+    </html>

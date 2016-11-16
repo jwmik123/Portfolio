@@ -1,0 +1,69 @@
+body {
+  overflow-x: hidden;
+}
+
+.brand-logo {
+  margin-left: -20px;
+}
+
+.button-collapse {
+  margin-left: 10px;
+}
+
+.landing-image {
+  height: 100vh;
+  background-image: url('../images/28H.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-top: -60px;
+  .logo {
+  }
+}
+
+.navi {
+  background-color: transparent;
+}
+
+.card-image {
+  height: 400px;
+}
+
+
+
+.margin-top {
+  margin-top: -30px;
+}
+
+.margin {
+  margin-top: -30px;
+}
+// cards
+.card-image-tellin {
+  background-image: url('../images/tellin.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card-image-npo {
+  background-image: url('../images/npo-thumb.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-image-schoolcheck {
+  background-image: url('../images/schoolcheck.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#blockquote-code-explaination {
+  margin-top: 35px;
+  height: 460px;
+}
+
+.github-link {
+  font-size: 21px;
+}
